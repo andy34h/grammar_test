@@ -1,0 +1,158 @@
+<html>
+<body bgcolor="#CCECEB" > 
+<br>
+<h1><center>PRESENT PROGRESSIVE TEST</center></h1><br>
+NAME:<input type="text" id="name"><br>
+<br>
+
+	<h3>I.	ONLY SELECT THE SENTENCES THAT ARE IN PRESENT PROGRESSIVE TENSE:</h3>
+	<input type="checkbox" >We have dinner right now.<br><br>
+	<input type="checkbox" id="r1" >We are having dinner right now.<br><br>
+	<input type="checkbox" >Are you going to do your homework?<br><br>
+	<input type="checkbox" id="r2" >The children are sleeping.<br><br>
+	<input type="checkbox" id="r3" >She is reading a horror story<br><br>
+	<input type="checkbox" >The contest will be on Monday.<br><br>
+	<input type="checkbox" id="r4" >Tom is eating a banana.<br><br>
+	<input type="checkbox"  >Ariel swims every Sunday.<br><br>
+	<input type="checkbox"  >You dance very well.<br><br>
+	<input type="checkbox" id="r11" >What is Bob doing?<br><br>
+	<input type="checkbox"  >When are you going to finish painting that door?<br><br>
+	<input type="checkbox"  >Leonardo complains a lot<br><br>
+	<input type="checkbox" id="r5" >Lucia is studying for her programming test.<br><br>
+	<input type="checkbox"  >Why are you so angry<br><br>
+	<input type="checkbox"  >We don't like to talk about that.<br><br>
+	
+	<h3>II.	CHOOSE THE CORRECT ANSWER:</h3>
+	1)What are you doing? I _________.<br>
+	listen to music<input type="radio"  name="p1"><br>
+	am listening to music<input type="radio"  id="r6" name="p1"><br><br>
+	2)Ariel usually _________ very well.<br>
+	sings<input type="radio"  id="r7" name="p2"><br>
+	is singing<input type="radio"  name="p2"><br><br>
+	3)She _________ soccer right now.<br>
+	is playing<input type="radio"  id="r8" name="p3"><br>
+	plays<input type="radio"  name="p3"><br><br>
+	4)Why  _________ so loud?<br>
+	he talks<input type="radio" name="p4"><br>
+	is he talking<input type="radio" id="r9" name="p4"><br><br>
+	5)We_________ to win today's contest.<br>
+	try<input type="radio"  name="p5"><br>
+	are trying<input type="radio"  id="r10" name="p5"><br><br>
+	
+	<h3>III.	FILL IN THE BLANKS WITH THE VERBS IN PARENTHESIS IN PROGRESSIVE PRESENT:</h3>
+	Example:<br>
+	Question: I _____________ (read) a good book. <br>
+	Answer:   I      am reading      a good book.<br><br>
+	1) I <input type="text" id="m1"> (lose) my patience.<br><br>
+	2) She <input type="text" id="m2"> (fall) asleep.<br><br>
+	3) Of course we<input type="text" id="m3"> (not watch) TV right now, we have a test tomorrow.<br><br>
+	4) He <input type="text" id="m4"> (not sleep) because he is insomniac.<br><br>
+	5) Q:What are you doing? A:I <input type="text" id="m5"> (eat) lunch with my girlfriend.<br><br>
+
+	<h3>IV.	SELECT THE CORRECT ANSWER:</h3>
+	1) We use it to talk about a single object.<select id="g1"><br>
+	<option >There are</option><br>
+	<option>There is</option><br>
+	</select><br><br>
+	2) We use it to talk about an action that is happening right now.<select id="g2"><br>
+	<option >I eat</option>
+	<option>I am eating</option><br>
+	</select><br><br>
+	3) The abbreviation of living room is: <select id="g3"><br>
+	<option >LVN RM</option><br>
+	<option>LVG RM</option><br>
+	</select><br><br>
+	4) The abbreviation of building is: <select id="g4"><br>
+	<option>BDRM</option><br>
+	<option>BLDG</option><br>
+	</select><br><br><br><br>
+	<center><input style="width:100px; height:50px; background:#53F66B" type='button' value="SEND" onclick="revisar()" </center><br>
+	<script language="javascript">
+	function revisar()
+	{	var puntos=0;
+	
+		n=document.getElementById("name").value;
+	
+		w1=document.getElementById("r1").checked;
+		w2=document.getElementById("r2").checked;
+		w3=document.getElementById("r3").checked;
+		w4=document.getElementById("r4").checked;
+		w5=document.getElementById("r5").checked;
+		w55=document.getElementById("r11").checked;
+		
+		w6=document.getElementById("r6").value;
+		w7=document.getElementById("r7").value;
+		w8=document.getElementById("r8").value;
+		w9=document.getElementById("r9").value
+		w10=document.getElementById("r10").value;
+		
+		w11=document.getElementById("g1").value;
+		w12=document.getElementById("g2").value;
+		w13=document.getElementById("g3").value;
+		w14=document.getElementById("g4").value;
+		
+		w15=document.getElementById("m1").checked;
+		w16=document.getElementById("m2").checked;
+		w17=document.getElementById("m3").checked;
+		w18=document.getElementById("m4").checked;
+		w19=document.getElementById("m5").checked;
+		
+		if(w15=="am losing" || w15=="AM LOOSING"){
+		puntos=puntos+4;
+		}
+		if(w16=="is falling" || w16=="IS FALLING"){
+		puntos=puntos+4;
+		}
+		if(w17=="are not watching" || w17=="aren't watching"|| w17=="AREN'T WATCHING"|| w17=="ARE NOT WATCHING"){
+		puntos=puntos+4;
+		}
+		if(w18=="is not sleeping" || w18=="isn't sleeping"|| w18=="IS NOT SLEEPING"|| w18=="ISN'T SLEEPING"){
+		puntos=puntos+4;
+		}
+		if(w19=="am eating" || w16=="AM EATING"){
+		puntos=puntos+4;
+		}
+		
+		if(w11=="There is"){
+		puntos=puntos+5;
+		}
+		if(w12=="I am eating"){
+		puntos=puntos+5;
+		}
+		if(w13=="LVG RM"){
+		puntos=puntos+5;
+		}
+		if(w14=="BLDG"){
+		puntos=puntos+5;
+		}
+		if(w1){
+			puntos=puntos+2;}
+		if(w2){
+			puntos=puntos+2;}
+		if(w3){
+			puntos=puntos+2;}
+		if(w4){
+			puntos=puntos+2;}
+		if(w5){
+			puntos=puntos+1;}
+		if(w55){
+			puntos=puntos+1;}
+			
+		if(w6.checked){
+			puntos=puntos+2;}
+		if(w7.checked){
+			puntos=puntos+2;}
+		if(w8.checked){
+			puntos=puntos+2;}
+		if(w9.checked){
+			puntos=puntos+2;}
+		if(w10.checked){
+			puntos=puntos+2;}
+		
+		alert("Hola, "+n+" . Su nota es "+puntos+" /60");
+	}
+	
+</script>
+</p>
+</body>
+</html>
